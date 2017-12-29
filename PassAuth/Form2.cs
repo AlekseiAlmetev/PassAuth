@@ -27,38 +27,7 @@ namespace PassAuth
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*string oldpas = textBox1.Text;
-            string newpas = textBox2.Text;
-            string pass;
-            FileStream file = new FileStream("pass.txt", FileMode.Open);
-            StreamReader reader = new StreamReader(file);
-            pass = reader.ReadLine();
-            reader.Close();
-            int[] key = textBox3.Text.Split(' ').Where(x => !string.IsNullOrWhiteSpace(x)).Select(x => int.Parse(x)).ToArray();
-            oldpas = Encrypt(oldpas, kl.Val);
-            if (pass == oldpas)
-            {
-                FileStream wfile = new FileStream("pass.txt", FileMode.Truncate);
-                StreamWriter writer = new StreamWriter(wfile);
-                Random rnd = new Random();
-                int i = 1 + rnd.Next(100);
-                kl.Val = GenerateKeyWord(i);
-                string str = "";
-                for (i = 0; i < kl.Val.Length; i++)
-                {
-                    str += kl.Val[i].ToString() + " ";
-                }
-                newpas = Encrypt(newpas, kl.Val);
-                writer.WriteLine(newpas);
-                writer.Close();
-                MessageBox.Show("Your new key: " + str);
-            }
-            else
-            {
-                i--;
-                MessageBox.Show("Wrong password or key! You have " + i + " chances!");
-            }*/
-
+            
             string oldpas = textBox1.Text;
             string newpas = textBox2.Text;
             string drive = "\\\\.\\" + kl.Dir;
